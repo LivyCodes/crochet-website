@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livy Crochet Art</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.clipartmax.com/png/middle/471-4717485_crochet-icon-png-clipart-crochet-knitting-clip-art-%C3%B6rg%C3%BC-icon.png"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Courier+Prime&family=Satisfy&display=swap");
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 40px 20px 20px 20px;
+        background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+      }
+      h1 {
+        font-size: 3em;
+        font-weight: bolder;
+        border-bottom: 3px solid black;
+        width: 50%;
+        padding-bottom: 5px;
+        color: rgb(5, 84, 67);
+        margin: 10px;
+        line-height: 55px;
+      }
+      h1 span {
+        font-weight: 100;
+      }
+      h2 {
+        font-family: "Satisfy", cursive;
+        font-size: 2em;
+        width: 50%;
+        color: rgb(47, 135, 87);
+        margin: 10px;
+      }
+      p {
+        text-align: center;
+        font-size: x-large;
+        font-weight: 300;
+        font-family: "Satisfy", cursive;
+        margin: 10px;
+      }
+      hr {
+        position: relative;
+        top: 10px;
+        border: none;
+        height: 8px;
+        background: black;
+        margin-bottom: 20px;
+      }
+
+      .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .gallery .column {
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+      }
+      .gallery .column img {
+        padding-bottom: 15px;
+        width: 100%;
+        border-radius: 15px;
+      }
+      button {
+        display: block;
+        margin: 10px auto;
+        padding: 15px 20px;
+        background: rgb(47, 135, 87);
+        color: white;
+        border: 1px solid rgb(47, 135, 87);
+        border-radius: 35px;
+        box-shadow: 10px 5px 5px gray;
+        transition: all 150ms ease-in;
+        font-family: "Cabin", sans-serif;
+        font-size: 20px;
+      }
+      button:hover {
+        cursor: pointer;
+        color: rgb(47, 135, 87);
+        background: #fff;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+      }
+      li {
+        display: inline;
+        padding: 10px;
+      }
+      .learnCrochet {
+        font-family: "Cabin", sans-serif;
+        font-size: 20px;
+        color: rgb(47, 135, 87);
+        font-weight: bold;
+      }
+      h3 {
+        font-family: "Courier Prime", monospace;
+      }
+      h3 span {
+        font-weight: lighter;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧶LIVY <span>CROCHET</span>🧶</h1>
+    <h2><em>Crochet Clothing & Apparel</em></h2>
+    <p>
+      Welcome to Livy Crochet. Here for all your crochet clothing and
+      apparel.<br />
+      ⁂Shop for all your crochet fits here.<br />
+      ⁂Learn how to crochet by clicking the link below.
+    </p>
+    <hr />
+
+    <div class="gallery">
+      <div class="column">
+        <img
+          src="https://media.istockphoto.com/id/1365458902/photo/closeup-of-crochet-knitting-in-progress.jpg?b=1&s=170667a&w=0&k=20&c=A2TBYjb_afiPjwOCLp4FEzed15Cv9SPJKNcDslU8k-U="
+          width="300"
+          height="300"
+        />
+        <img
+          src="https://forthefrills.com/wp-content/uploads/2021/04/easy-ribbed-crop-top-crochet-pattern-13-finished-diy-top.jpg"
+          width="300"
+          height="300"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://www.crochetwithcarrie.com/wp-content/uploads/2022/01/Untitled-design-26-1024x1024.jpg"
+          width="300"
+          height="300"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1346636854/photo/craft-hobby-background-with-yarn-in-natural-colors.jpg?s=612x612&w=0&k=20&c=IVphozgsQ4J_I4HGJwGoZd3oBmL9bI3zp2D7jP5CX7w="
+          width="300"
+          height="300"
+        />
+      </div>
+    </div>
+    <button>
+      <strong>Shop Here</strong>
+    </button>
+    <ul>
+      <li>
+        <a
+          href="https://sarahmaker.com/how-to-crochet/"
+          class="learnCrochet"
+          target="_blank"
+          >🔗Learn How to Crochet
+        </a>
+      </li>
+    </ul>
+    <h3><span>Coded by</span> Olive Wakamwe</h3>
+    <script>
+      function shopHere() {
+        let firstName = prompt("What is your email address?");
+        let emailSignUp = prompt(
+          "Would you like to be receiving our updates via email?"
+        );
+        let crochetPreference = prompt(
+          "Do you want a piece that is customized or readymade?"
+        ).toUpperCase();
+        let crochetPiece = prompt(
+          "Are you interested in a top, a cardigan or a bag?"
+        ).toUpperCase();
+
+        if (crochetPiece === "TOP" && crochetPreference === "CUSTOMIZED") {
+          alert(
+            "Thankyou " +
+              firstName +
+              " for your feedback. " +
+              "An assorted list of customized tops is coming right up."
+          );
+        } else if (
+          crochetPiece === "TOP" &&
+          crochetPreference === "READYMADE"
+        ) {
+          alert(
+            "Thankyou " +
+              firstName +
+              " for your feedback. " +
+              "An assorted list of ready-made tops is coming right up."
+          );
+        } else if (
+          crochetPiece === "CARDIGAN" &&
+          crochetPreference === "CUSTOMIZED"
+        ) {
+          alert(
+            "Thankyou " +
+              firstName +
+              " for your feedback. " +
+              "An assorted list of customized cardigans is coming right up."
+          );
+        } else if (
+          crochetPiece === "CARDIGAN" &&
+          crochetPreference === "READYMADE"
+        ) {
+          alert(
+            "Thankyou " +
+              firstName +
+              " for your feedback. " +
+              "An assorted list of ready-made cardigans is coming right up."
+          );
+        } else if (
+          crochetPiece === "BAG" &&
+          crochetPreference === "CUSTOMIZED"
+        ) {
+          alert(
+            "Thankyou " +
+              firstName +
+              " for your feedback. " +
+              "An assorted list of customized bags is coming right up."
+          );
+        } else {
+          alert(
+            "Thankyou " +
+              firstName +
+              " for your feedback. " +
+              "An assorted list of readymade bags is coming right up."
+          );
+        }
+      }
+      let shopHereButton = document.querySelector("button");
+      shopHereButton.addEventListener("click", shopHere);
+    </script>
+  </body>
+</html>
